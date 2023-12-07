@@ -5,13 +5,13 @@ print("Welcome to the Math Quiz!")
 while True:
     try:
         difficulty = int(input("Choose difficulty level (1, 2, or 3): "))
-    if difficulty not in [1, 2, 3]:
-except ValueError:
-    print("Choose difficulty level (1, 2, or 3)")
+        if difficulty in [1, 2, 3]:
+            break
+        else:
+            print("napishite 4hislo 1,2 ili 3")
+    except:
+        print("ne slovo, a 4hislo")
     
-    
-    
-
 num_questions = int(input("How many questions do you want to answer? "))
 
 operations = ['+', '-', '*', '/', '**']
